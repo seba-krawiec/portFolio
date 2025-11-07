@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import preact from '@preact/preset-vite'
+import legacy from '@vitejs/plugin-legacy'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [preact()],
+  plugins: [preact(),
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+    }),
+  ],
 })
