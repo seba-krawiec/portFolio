@@ -1,14 +1,11 @@
-type InicioProps = {
-  children?: ChildNode | string | undefined;
-};
-
 import { Page } from "../layout/Page";
 
-export const Inicio = ({ children }: InicioProps) => {
+import { Nav } from "../layout";
+
+export const Inicio = () => {
   return (
     <Page>
-      {children}
-      Inicio
+      <Nav />
     </Page>
   );
 };
