@@ -1,4 +1,4 @@
-import "./layoutCss/Page.css";
+import "./layoutCss/Page.scss";
 
 type ContentProps = {
   children?: ChildNode | string | undefined;
