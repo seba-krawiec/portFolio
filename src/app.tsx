@@ -1,5 +1,5 @@
 import { Contacto, Inicio, Experiencia, Proyectos } from "./components/Pages";
-import "./app.css";
+import "./app.scss";
 
 export function App() {
   return (
