@@ -2,7 +2,7 @@ type IconProps = {
   fill?: string;
   size?: string;
 };
-const IconCv = ({ fill, size }: IconProps) => {
+export const IconCv = ({ fill, size }: IconProps) => {
   return (
     <svg
       width={size ? size : "19"}
@@ -21,5 +21,3 @@ const IconCv = ({ fill, size }: IconProps) => {
     </svg>
   );
 };
-
-export default IconCv;
