@@ -1,0 +1,29 @@
+.btn{
+    display: flex;
+    align-items: center;
+    border: solid .16rem #4F3874;
+    border-radius: .6rem;
+    background-color: transparent;
+    color:  #4F3874;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+
+
+    &:hover {
+        background-color: #E8F7F7;
+        border-color: #E8F7F7;
+        color:  #4F3874;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    &:active {
+        border: solid .2rem transparent;
+        color: #E8F7F7;
+        background: radial-gradient(circle,rgba(22, 141, 154, 0.89) 0%, rgba(132, 181, 186, 0.3) 100%);
+    }
+
+    &:visited {
+        color:  #4F3874;
+    }
+}
