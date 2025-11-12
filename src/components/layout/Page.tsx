@@ -1,9 +1,15 @@
+import type { ReactNode } from "preact/compat";
 import "./layoutCss/Page.scss";
 
 type ContentProps = {
-  children?: ChildNode | string | undefined;
+  children?: ReactNode;
+  id?: string;
 };
 
-export const Page = ({ children }: ContentProps) => {
-  return <div className="page">{children}</div>;
+export const Page = ({ children, id }: ContentProps) => {
+  return (
+    <div className="page" id={id}>
+      {children}
+    </div>
+  );
 };

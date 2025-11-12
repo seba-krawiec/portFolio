@@ -6,7 +6,7 @@ import { Page } from "../layout/Page";
 
 export const Experiencia = ({ children }: ExperienciaProps) => {
   return (
-    <Page>
+    <Page id="experiencia">
       {children}
       Exp
     </Page>

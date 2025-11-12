@@ -4,7 +4,7 @@ import { Nav } from "../layout";
 
 export const Inicio = () => {
   return (
-    <Page>
+    <Page id="inicio">
       <Nav />
     </Page>
   );

@@ -6,7 +6,7 @@ import { Page } from "../layout/Page";
 
 export const Proyectos = ({ children }: ProyectosProps) => {
   return (
-    <Page>
+    <Page id="proyectos">
       {children}
       Proyectos
     </Page>
