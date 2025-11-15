@@ -1,22 +1,28 @@
+import {
+  IconCv,
+  IconProjects,
+  IconContact,
+  IconHome,
+  IconExp,
+} from "../../../public/icons/";
 import { BtnPrimary } from "../buttons/BtnPrimary";
-import IconCv from "../../../public/icons/IconCv";
 import "./layoutCss/Nav.scss";
 
-export const Nav = () => {
+type Props = {
+  location: string;
+};
+
+export const Nav = ({ location }: Props) => {
   return (
-    <div className="navBar">
-      <BtnPrimary label="Inicio" handleClick={() => console.log("click")} />
-      <BtnPrimary
-        label="Experiencia"
-        handleClick={() => console.log("click")}
-      />
-      <BtnPrimary label="Proyectos" handleClick={() => console.log("click")} />
-      <BtnPrimary label="Contacto" handleClick={() => console.log("click")} />
-      <BtnPrimary
-        label="Curriculum"
-        icon={<IconCv fill={"#4F3874"} />}
-        handleClick={() => console.log("click")}
-      />
-    </div>
+    <nav className="navBar">
+      {location !== "home" && (
+        <BtnPrimary goTo="#inicio" label="Inicio" icon={<IconHome />} />
+      )}
+
+      <BtnPrimary goTo="#experiencia" label="Experiencia" icon={<IconExp />} />
+      <BtnPrimary goTo="#proyectos" label="Proyectos" icon={<IconProjects />} />
+      <BtnPrimary goTo="#contacto" label="Contacto" icon={<IconContact />} />
+      <BtnPrimary goTo="curriculum" label="Curriculum" icon={<IconCv />} />
+    </nav>
   );
 };
