@@ -1,29 +1,40 @@
+// @use "/src/components/sass/variables.scss" as *;
+@use "../../sass/variables";
+
 .btn{
     display: flex;
     align-items: center;
-    border: solid .16rem #4F3874;
+    border: solid .16rem map-get(map-get(variables.$colors, primary), 600 );
     border-radius: .6rem;
     background-color: transparent;
-    color:  #4F3874;
-    text-decoration: none;
-    transition: .2s ease-in-out;
+    backdrop-filter: blur(1rem);
+    color:  map-get(map-get(variables.$colors, primary), 600 );
+    transition: background-color .2s ease-in-out;
+    box-shadow: map-get(map-get(variables.$shadow , out), bottom );
+
 
 
     &:hover {
-        background-color: #E8F7F7;
-        border-color: #E8F7F7;
-        color:  #4F3874;
+        background-color: map-get(map-get(variables.$colors, secondary), 100 );
+        border-color: map-get(map-get(variables.$colors, secondary), 100 );
+        color:  map-get(map-get(variables.$colors, primary), 600 );
         cursor: pointer;
         transition: .2s ease-in-out;
     }
 
     &:active {
-        border: solid .2rem transparent;
-        color: #E8F7F7;
-        background: radial-gradient(circle,rgba(22, 141, 154, 0.89) 0%, rgba(132, 181, 186, 0.3) 100%);
-    }
+        border: solid .16rem transparent;
+        color: map-get(map-get(variables.$colors, secondary), 100 );
+        background: radial-gradient(circle,rgba(22, 141, 154, 0.6) 0%, rgba(132, 181, 186, 0.3) 100%);
+        transform: translateY(.1rem);
+        
+        svg path{
+            stroke: map-get(map-get(variables.$colors, secondary), 100 );
+        }
+      
+        }
+    svg path{
 
-    &:visited {
-        color:  #4F3874;
+        stroke: map-get(map-get(variables.$colors, primary), 600 )
     }
 }
