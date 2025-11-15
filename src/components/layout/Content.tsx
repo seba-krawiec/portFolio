@@ -1,5 +1,7 @@
+import type { ReactNode } from "preact/compat";
+
 type ContentProps = {
-  children: ChildNode | string | undefined;
+  children: ReactNode;
 };
 
 export const Content = ({ children }: ContentProps) => {
