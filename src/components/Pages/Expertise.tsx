@@ -1,8 +1,8 @@
 import { Page } from "../layout/Page";
 
-export const Expertice = () => {
+export const Expertise = () => {
   return (
-    <Page id="expertice" extraClass="exp">
+    <Page id="expertises" extraClass="exp">
       Exp
     </Page>
   );
