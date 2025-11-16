@@ -1,0 +1,39 @@
+@use "../_abstract/index" as *;
+
+.btn{
+    display: flex;
+    align-items: center;
+    border: solid .16rem map-get(map-get($colors, primary), 600 );
+    border-radius: .6rem;
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
+    color:  map-get(map-get($colors, primary), 600 );
+    transition: background-color .2s ease-in-out;
+    box-shadow: map-get(map-get($shadow , out), bottom );
+
+
+
+    &:hover {
+        background-color: map-get(map-get($colors, secondary), 100 );
+        border-color: map-get(map-get($colors, secondary), 100 );
+        color:  map-get(map-get($colors, primary), 600 );
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    &:active {
+        border: solid .16rem transparent;
+        color: map-get(map-get($colors, secondary), 100 );
+        background: radial-gradient(circle,rgba(22, 141, 154, 0.6) 0%, rgba(132, 181, 186, 0.3) 100%);
+        transform: translateY(.1rem);
+        
+        svg path{
+            stroke: map-get(map-get($colors, secondary), 100 );
+        }
+      
+        }
+    svg path{
+
+        stroke: map-get(map-get($colors, primary), 600 )
+    }
+}
