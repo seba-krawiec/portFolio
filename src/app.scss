@@ -1,3 +1,4 @@
+@use "./components/sass/_abstract/index" as *;
 *, before, after{
     padding:0;
     margin:0;
@@ -7,7 +8,8 @@
 html{
     font-size: 62.5%;
      scrollbar-width: none;
-     font-family: sans-serif;
+     font-family: "Poppins";
+     scroll-behavior: smooth;
 }
 
 body{
@@ -15,9 +17,17 @@ body{
     scrollbar-width: 0;
     overflow-x: hidden;
     -ms-overflow-style: none;
-    background: radial-gradient(circle,rgba(181, 212, 215, 0.3) 0%, rgba(23, 141, 154, 0.6) 100%);
+    // background:radial-gradient(circle,rgba(181, 212, 215, 0.3) -10%, rgba(20, 120, 132, 0.6) 100%), url($bgPattern);
+    background:radial-gradient(circle,rgba(181, 212, 215, 0.3) -10%, rgba(20, 120, 132, 0.6) 100%), url("../public/images/pattern_circle-glass.png");
+    background-size: 9rem;
+    background-blend-mode:multiply;
+
    
 }
 
  body::-webkit-scrollbar, 
  body::-webkit-scrollbar-button { display: none; }
+ img{
+    width: 100%;
+    height: 100%;
+ }
