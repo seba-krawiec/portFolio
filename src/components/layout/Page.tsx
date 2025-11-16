@@ -1,15 +1,16 @@
 import type { ReactNode } from "preact/compat";
-import "./layoutCss/Page.scss";
+import "../sass/_layoutCss/Page.scss";
 
 type ContentProps = {
   children?: ReactNode;
   id?: string;
+  extraClass?: string;
 };
 
-export const Page = ({ children, id }: ContentProps) => {
+export const Page = ({ children, id, extraClass }: ContentProps) => {
   return (
-    <div className="page" id={id}>
+    <section className={`page ${extraClass}`} id={id}>
       {children}
-    </div>
+    </section>
   );
 };
