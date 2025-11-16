@@ -1,0 +1,63 @@
+@use "../_abstract/index" as *;
+
+
+.home{
+
+    &-content{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        margin-top: -6vw;
+        max-width: 53vw;
+    }
+
+    &-imgWrapper{
+        max-width: 30vw;
+        clip-path: circle(47%);
+    }
+
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6vw;
+        width: 100%;
+    }
+
+    &-titleWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title{
+         display: inline-block;
+        text-transform: uppercase;
+        font-size: 5.6rem;
+        line-height: 7.7rem;
+        font-weight: map-get($font-weight , extraBold );
+        color: map-get(map-get($colors ,primary ), 600 );
+    }
+
+    &-subtitle{
+         display: inline-block;
+        font-size: 5rem;
+        line-height: 7rem;
+        margin-top: -2rem;
+        font-weight: map-get($font-weight , semiBold );
+        color: map-get(map-get($colors ,primary ), 500 );
+    }
+
+    &-text{
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-top: 1.9rem;
+        font-weight: map-get($font-weight , medium );
+        color: map-get(map-get($colors ,secondary ), 600 );
+
+        span{
+            font-weight: map-get($font-weight , extraBold );
+        }
+    }
+}
