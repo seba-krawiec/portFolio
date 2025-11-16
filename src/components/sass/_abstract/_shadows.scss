@@ -1,0 +1,15 @@
+// shadows
+
+$shadow: (
+
+    out:(
+
+        bottom:(0px 4px 9px 0px rgba(22,141,154,0.6), 0px 2px 1px 0px rgba(22,141,154,0.3)),
+        top:0px -3px 1px 0px #FDFDFD,
+    ),
+    in:(
+        bottom:inset 0px -4px 15px 0px rgba(22,141,154,0.15),
+        top:inset 0px 4px 15px 0px rgba(22,141,154,0.15),
+    )
+    
+);

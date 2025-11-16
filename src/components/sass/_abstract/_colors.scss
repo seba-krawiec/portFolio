@@ -1,0 +1,17 @@
+// colors
+$colors:(
+    primary:(
+        600: #4F3874,
+        500: #9389B0,
+    ),
+    secondary:(
+        600: #168D9A,
+        500: #84B5BA,
+        100: #E8F7F7,
+    )
+);
+
+
+
+
+$bgPattern:'data:image/svg+xml,<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><foreignObject x="-15" y="-15" width="55" height="55"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7.5px);clip-path:url(%23bgblur_0_2769_283_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="15"><circle cx="12.5" cy="12.5" r="12.5" fill="white" fill-opacity="0.1"/><circle cx="12.5" cy="12.5" r="12" stroke="url(%23paint0_linear_2769_283)" stroke-opacity="0.5"/></g><defs><clipPath id="bgblur_0_2769_283_clip_path" transform="translate(15 15)"><circle cx="12.5" cy="12.5" r="12.5"/></clipPath><linearGradient id="paint0_linear_2769_283" x1="0" y1="12.5" x2="25" y2="12.5" gradientUnits="userSpaceOnUse"><stop stop-color="%23CCCCCC" stop-opacity="0.5"/><stop offset="1" stop-color="%23565656"/></linearGradient></defs></svg>';
