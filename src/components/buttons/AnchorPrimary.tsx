@@ -1,14 +1,15 @@
 import { type ReactNode } from "react";
-import "./buttonsCss/_btn--anchor.scss";
+import "../sass/_buttonsCss/_btn--anchor.scss";
 
 type AnchorProps = {
   children?: ReactNode;
   goTo?: string;
+  target?: string;
 };
 
-export default function AnchorPrimary({ children, goTo }: AnchorProps) {
+export default function AnchorPrimary({ children, goTo, target }: AnchorProps) {
   return (
-    <a href={goTo} className="btn--anchor">
+    <a href={goTo} className="btn--anchor" target={target}>
       {children}
     </a>
   );
