@@ -1,4 +1,4 @@
-import { Contacto, Inicio, Experiencia, Proyectos } from "./components/Pages";
+import { Contact, Home, Expertise, Projects } from "./components/Pages";
 import "./app.scss";
 import { Nav } from "./components/layout";
 
@@ -11,11 +11,11 @@ export function App() {
 
   return (
     <div className="app">
-      <Inicio />
+      <Home />
       <Nav style={navStyle} />
-      <Experiencia />
-      <Proyectos />
-      <Contacto />
+      <Expertise />
+      <Projects />
+      <Contact />
     </div>
   );
 }
