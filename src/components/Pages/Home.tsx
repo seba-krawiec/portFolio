@@ -1,11 +1,11 @@
 import { Page } from "../layout/Page";
-import { Nav } from "../layout";
+import { Content, Nav } from "../layout";
 import "../sass/_pagesCss/_pagesHome.scss";
 
 export const Home = () => {
   return (
     <Page extraClass="home" id="home">
-      <div className="home-content">
+      <Content extraClass="home-content">
         <div className="home-imgWrapper">
           <img
             className="home-img"
@@ -26,7 +26,7 @@ export const Home = () => {
           </div>
           <Nav location="home" />
         </div>
-      </div>
+      </Content>
     </Page>
   );
 };
