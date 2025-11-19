@@ -10,6 +10,7 @@
     color:  map-get(map-get($colors, primary), 600 );
     transition: background-color .2s ease-in-out;
     box-shadow: map-get(map-get($shadow , out), bottom );
+    gap: 1rem;
 
 
 
