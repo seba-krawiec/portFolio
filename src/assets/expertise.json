@@ -1,0 +1,44 @@
+{
+
+    "jobs":[
+            {
+                "title":"Blue Alba",
+                "timeLapse":"Jun 2022 - Ago 2024",
+                "description":"Desarrollo y maquetado de interfaces web en REACT JS. Implementación de manejos de estado con REACT REDUX y CONTEXT API.Desarrollo y optimización de lógica de negocios.Manejo de interfaz de datos con GRAPHQL y POSTGRESQL."
+            },
+            {
+                "title":"Hospital Sirio Libanes",
+                "timeLapse":"Dic 2021 - Jun 2022",
+                "description":"Diseño y desarrollo de interfaces con foco en la optimización de la experiencia de usuario.Investigación y armado de wireframes y prototipos.Armado de servidor en NODEjs, con implementacion de PASARELA DE PAGOS con API de mercado pago."
+            },
+            {
+                "title":"Gestión y Servicios SRL",
+                "timeLapse":"Ago 2021 -- Dic 2021",
+                "description":"Mantenimiento de portal WEB de manejo interno de la empresa en NODEjs y REACT.Manejo de autenticaciones con JASON WEB TOKEN."
+            }
+
+        ],
+    "projects":[
+        {
+            "title":"1",
+            "descrption":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum pulvinar leo, sit amet molestie arcu dapibus viverra. Duis consequat libero nunc, lobortis eleifend magna finibus quis. Fusce sed hendrerit elit, vitae varius dui. Aliquam erat volutpat. Integer elementum arcu quis pellentesque interdum.",
+            "gitHubRepo":"https://github@repo.com",
+            "demoLink":"https://demo@link.com"
+        },
+        {
+            "title":"2",
+            "descrption":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum pulvinar leo, sit amet molestie arcu dapibus viverra. Duis consequat libero nunc, lobortis eleifend magna finibus quis. Fusce sed hendrerit elit, vitae varius dui. Aliquam erat volutpat. Integer elementum arcu quis pellentesque interdum.",
+            "gitHubRepo":"https://github@repo.com",
+            "demoLink":"https://demo@link.com"
+        },
+        {
+            "title":"3",
+            "descrption":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum pulvinar leo, sit amet molestie arcu dapibus viverra. Duis consequat libero nunc, lobortis eleifend magna finibus quis. Fusce sed hendrerit elit, vitae varius dui. Aliquam erat volutpat. Integer elementum arcu quis pellentesque interdum.",
+            "gitHubRepo":"https://github@repo.com",
+            "demoLink":"https://demo@link.com"
+        }
+
+    ]
+
+
+}
