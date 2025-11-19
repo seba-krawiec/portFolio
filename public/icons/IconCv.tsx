@@ -2,11 +2,11 @@ type IconProps = {
   fill?: string;
   size?: string;
 };
-export const IconCv = ({ fill, size }: IconProps) => {
+export const IconCv = ({ size }: IconProps) => {
   return (
     <svg
-      width={size ? size : "19"}
-      height={size ? size : "19"}
+      width={size ? size : "23"}
+      height={size ? size : "23"}
       viewBox="0 0 19 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

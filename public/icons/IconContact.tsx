@@ -1,11 +1,10 @@
 type Props = {
-  fill?: string;
   size?: string;
 };
-export const IconContact = ({ fill, size }: Props) => {
+export const IconContact = ({ size }: Props) => {
   return (
     <svg
-      width={size ? size : "21"}
+      width={size ? size : "23"}
       height="20"
       viewBox="0 0 21 20"
       fill="none"
