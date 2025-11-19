@@ -1,5 +1,4 @@
 import type { ReactNode } from "preact/compat";
-import { BtnPrimary } from "../buttons";
 import "../sass/_cardCss/_card.scss";
 
 type CardProps = {
@@ -9,6 +8,7 @@ type CardProps = {
   extraClass?: string;
   text: string;
   title?: string;
+  time?: string;
 };
 
 export const Card = ({
@@ -20,7 +20,7 @@ export const Card = ({
   children,
 }: CardProps) => {
   return (
-    <article className={`card ${extraClass}`}>
+    <article className={extraClass ? `card ${extraClass}` : "card"}>
       <figure className="card_imgWrapper">
         <img className="card_img" src={img} alt={alt} />
       </figure>
@@ -38,11 +38,13 @@ export const HorizontalCard = ({
   text,
   title,
   children,
+  time,
 }: CardProps) => {
   return (
-    <article className={`card ${extraClass}`}>
+    <article className={extraClass ? `card ${extraClass}` : "card"}>
       <div className="card_titleWrapper">
         <h2 className="card_title">{title}</h2>
+        <h3 className="card_titleTime">{time}</h3>
       </div>
       {text && <p className="card_text">{text}</p>}
       <div className="card_btnsWrapper">{children}</div>
