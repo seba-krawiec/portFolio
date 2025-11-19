@@ -10,7 +10,7 @@
  height: 100%;
  color:  map-get(map-get($colors, primary), 600 );
  font-weight: map-get( $font-weight, medium );
- padding: .6rem 1rem;
+ 
 
    &:active {
         color: map-get(map-get($colors, secondary), 100 );
