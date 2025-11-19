@@ -3,16 +3,29 @@ import "./app.scss";
 import { Nav } from "./components/layout";
 
 export function App() {
-  const navStyle = {
+  const navWrapper = {
+    display: "flex",
+    justifyContent: "center",
+    maxWidth: "100%",
     position: "sticky",
-    left: "67.5rem",
     top: "3rem",
+    zIndex: "10",
+  };
+
+  const navContainer = {
+    display: "flex",
+    maxWidth: "53vw",
+    marginRight: "-6.4rem",
   };
 
   return (
     <div className="app">
       <Home />
-      <Nav style={navStyle} />
+      <div style={navWrapper}>
+        <div style={navContainer}>
+          <Nav />
+        </div>
+      </div>
       <Expertise />
       <Projects />
       <Contact />
