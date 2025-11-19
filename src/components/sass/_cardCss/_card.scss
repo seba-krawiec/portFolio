@@ -1,0 +1,52 @@
+@use "../_abstract/index" as *;
+
+.card{
+    
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: .6rem;
+    background-color: map-get(map-get($colors, secondary ), 100);
+    padding: 1rem 1.3rem;
+    height: 20rem;
+    min-width: 100%;
+    box-shadow: map-get(map-get($shadow, out), bottom ), map-get(map-get($shadow, out), top );
+
+    &_titleWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: .5rem;
+    }
+
+    &_title{
+        text-transform: uppercase;
+        font-size: map-get($font-size , title);
+        font-weight: map-get($font-weight , extraBold );
+        color: map-get(map-get($colors, secondary), 600 );
+    }
+
+    &_titleTime{
+        font-size: map-get($font-size , subtitle);
+        font-weight: map-get($font-weight , medium );
+        color: map-get(map-get($colors, secondary), 500 );
+    }
+
+    &_text{
+        font-size: map-get($font-size , paragraph);
+        font-weight: map-get($font-weight , medium );
+        color: map-get(map-get($colors, primary), 600 );
+        line-height: map-get($font-lineHeight, text );
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 98%;
+        height: .4rem;
+        border-radius: 1rem;
+        background-color: map-get(map-get($colors, primary), 500 );
+        bottom: 1rem;
+        left: 1rem;
+    }
+}
