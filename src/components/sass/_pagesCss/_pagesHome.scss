@@ -2,15 +2,18 @@
 
 
 .home{
+        content-visibility: auto;
+
 
     &-content{
 
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row;
         gap: 2vw;
-        margin-top: -6vw;
         max-width: 53vw;
+            margin-top: -23rem;
     }
 
     &-imgWrapper{
