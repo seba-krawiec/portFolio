@@ -6,9 +6,10 @@ import {
   IconHome,
   IconExp,
 } from "../../../public/icons/";
-import { BtnPrimary } from "../buttons/BtnPrimary";
 import "../sass/_layoutCss/Nav.scss";
-import cv2025 from "../../../public/pdfs/cv_2025.png";
+import { BtnPrimary } from "../buttons/BtnPrimary";
+import cv2025 from "../../../public/pdfs/sebastian-krawiec_desarrollador-web.pdf";
+import AnchorPrimary from "../buttons/AnchorPrimary";
 
 type Props = {
   location?: string;
@@ -19,18 +20,36 @@ export const Nav = ({ location, style }: Props) => {
   return (
     <nav className="navBar" style={style}>
       {location !== "home" && (
-        <BtnPrimary goTo="#inicio" label="Inicio" icon={<IconHome />} />
+        <BtnPrimary>
+          <AnchorPrimary goTo="#home" label="inicio" icon={<IconHome />} />
+        </BtnPrimary>
       )}
 
-      <BtnPrimary goTo="#experiencia" label="Experiencia" icon={<IconExp />} />
-      <BtnPrimary goTo="#proyectos" label="Proyectos" icon={<IconProjects />} />
-      <BtnPrimary goTo="#contacto" label="Contacto" icon={<IconContact />} />
-      <BtnPrimary
-        goTo={cv2025}
-        target="_blank"
-        label="Curriculum"
-        icon={<IconCv />}
-      />
+      <BtnPrimary>
+        <AnchorPrimary goTo="#exp" label="Experiencia" icon={<IconExp />} />
+      </BtnPrimary>
+      <BtnPrimary>
+        <AnchorPrimary
+          goTo="#projects"
+          label="Proyectos"
+          icon={<IconProjects />}
+        />
+      </BtnPrimary>
+      <BtnPrimary>
+        <AnchorPrimary
+          goTo="#contact"
+          label="Contacto"
+          icon={<IconContact />}
+        />
+      </BtnPrimary>
+      <BtnPrimary>
+        <AnchorPrimary
+          goTo={cv2025}
+          target="_blank"
+          label="Curriculum"
+          icon={<IconCv />}
+        />
+      </BtnPrimary>
     </nav>
   );
 };
