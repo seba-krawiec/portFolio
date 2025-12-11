@@ -2,9 +2,9 @@
 
 
 .home{
-        content-visibility: auto;
-
-
+       content-visibility: auto;
+    padding: unset;
+padding-top: 6rem;
     &-content{
 
         display: flex;
@@ -12,12 +12,13 @@
         justify-content: center;
         flex-direction: row;
         gap: 2vw;
-        max-width: 53vw;
-            margin-top: -23rem;
+        margin-top: -23rem;
+        height: unset;
     }
 
     &-imgWrapper{
-        max-width: 30vw;
+        width: 20vw;
+        min-width: 15vw;
         clip-path: circle(47%);
     }
 
@@ -25,7 +26,7 @@
         display: flex;
         flex-direction: column;
         gap: 1.6vw;
-        width: 100%;
+        width: 65rem;
     }
 
     &-titleWrapper{
@@ -36,16 +37,16 @@
     &-title{
          display: inline-block;
         text-transform: uppercase;
-        font-size: 5.6rem;
-        line-height: 7.7rem;
+        font-size: 4rem;
+        line-height: 8rem;
         font-weight: map-get($font-weight , extraBold );
         color: map-get(map-get($colors ,primary ), 600 );
     }
 
     &-subtitle{
          display: inline-block;
-        font-size: 5rem;
-        line-height: 7rem;
+        font-size: 4rem;
+        line-height: 4rem;
         margin-top: -2rem;
         font-weight: map-get($font-weight , semiBold );
         color: map-get(map-get($colors ,primary ), 500 );
@@ -53,8 +54,8 @@
 
     &-text{
         width: 100%;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
         padding-top: 1.9rem;
         font-weight: map-get($font-weight , medium );
         color: map-get(map-get($colors ,secondary ), 600 );
