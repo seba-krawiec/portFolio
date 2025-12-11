@@ -1,0 +1,50 @@
+{
+    "projects":[
+        {
+            "img":"/public/images/placeHolder.png",
+            "title":"1title",
+            "description":"1desc",
+            "repoLink":"https:1repo",
+            "demoLink":"https:1demo"
+        },
+        {
+            "img":"/public/images/placeHolder.png",
+            "title":"2title",
+            "description":"2desc",
+            "repoLink":"https:2repo",
+            "demoLink":"https:2demo"
+        },
+        {
+            "img":"/public/images/placeHolder.png",
+            "title":"3title",
+            "description":"3desc",
+            "repoLink":"https:3repo",
+            "demoLink":"https:3demo"
+        }
+
+    ],
+    "technologies":[
+  {"name": "Node.js", "site": "https://nodejs.org", "icon": ""},
+  {"name": "Express", "site": "https://expressjs.com", "icon": ""},
+  {"name": "React", "site": "https://react.dev", "icon": ""},
+  {"name": "Preact", "site": "https://preactjs.com", "icon": ""},
+  {"name": "Redux", "site": "https://redux.js.org", "icon": ""},
+  {"name": "React Router DOM", "site": "https://reactrouter.com", "icon": ""},
+  {"name": "Redux Toolkit", "site": "https://redux-toolkit.js.org", "icon": ""},
+  {"name": "Zustand", "site": "https://zustand-demo.pmnd.rs", "icon": ""},
+  {"name": "React Query", "site": "https://tanstack.com/query/latest", "icon": ""},
+  {"name": "MySQL", "site": "https://www.mysql.com", "icon": ""},
+  {"name": "PostgreSQL", "site": "https://www.postgresql.org", "icon": ""},
+  {"name": "Vite", "site": "https://vitejs.dev", "icon": ""},
+  {"name": "Bun", "site": "https://bun.sh", "icon": ""},
+  {"name": "NPM", "site": "https://www.npmjs.com", "icon": ""},
+  {"name": "Postman", "site": "https://www.postman.com", "icon": ""},
+  {"name": "Insomnia", "site": "https://insomnia.rest", "icon": ""},
+  {"name": "GraphQL", "site": "https://graphql.org", "icon": ""},
+  {"name": "Git", "site": "https://git-scm.com", "icon": ""},
+  {"name": "GitHub", "site": "https://github.com", "icon": ""},
+  {"name": "GitLab", "site": "https://gitlab.com", "icon": ""},
+  {"name": "Bitbucket", "site": "https://bitbucket.org", "icon": ""},
+  {"name": "Docker", "site": "https://www.docker.com", "icon": ""}
+]
+}
