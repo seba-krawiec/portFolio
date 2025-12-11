@@ -3,7 +3,6 @@
 .btn{
     display: flex;
     align-items: center;
-    border: solid .16rem map-get(map-get($colors, primary), 600 );
     border-radius: .6rem;
     background-color: transparent;
     backdrop-filter: blur(1rem);
