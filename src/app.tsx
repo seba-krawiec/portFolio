@@ -8,7 +8,7 @@ export function App() {
     justifyContent: "center",
     maxWidth: "100%",
     position: "sticky",
-    top: "3rem",
+    top: "1.5rem",
     zIndex: "10",
   };
 
